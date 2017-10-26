@@ -43,5 +43,4 @@ def karsilik_bul(*args,**kwargs):
 
 
 
-
 main()
