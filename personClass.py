@@ -21,17 +21,17 @@ class Calisan:
 
     ## bu fonksiyona sınıf adı üzerinden erişebilmek için @classmethod bezeyicisini ekledik.
    @classmethod
-   def getPersonel(self):
+   def getPersonel(cls):
        print(10*('*'),"Personel Listesi",10*('*'))
-       for p in self.personel:
+       for p in cls.personel:
            print(p)
 
    ## bu fonksiyona sınıf adı üzerinden erişebilmek için @classmethod bezeyicisini ekledik.
    ## Yani bu sınıfı örneklemek zorunda kalmadan da metodu çalıştırabiliriz
    @classmethod 
-   def showPersonCount(self):
+   def showPersonCount(cls):
        print(10*('*'),"Toplam Personel Sayısı",10*('*'))
-       print(len(self.personel))
+       print(len(cls.personel))
 
    def addTalent(self,talent):
        self.talents.append(talent)
